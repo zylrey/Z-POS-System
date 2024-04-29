@@ -1,2 +1,12 @@
 c:\users\mis\documents\visual studio 2013\Projects\Z POS System\Z POS System\bin\Debug\Z POS System.exe.config
 C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\bin\Debug\Z POS System.exe.config
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\bin\Debug\Z POS System.exe
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\bin\Debug\Z POS System.pdb
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\bin\Debug\Z POS System.xml
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z_POS_System.frmMain.resources
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z_POS_System.Resources.resources
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z POS System.vbproj.GenerateResource.Cache
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z POS System.exe.licenses
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z POS System.exe
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z POS System.xml
+C:\Users\OJT\Documents\GitHub\Z-POS-System\Z POS System\obj\Debug\Z POS System.pdb

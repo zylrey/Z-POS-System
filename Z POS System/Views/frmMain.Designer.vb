@@ -30,9 +30,13 @@ Partial Class frmMain
 		Me.btnCashier = New DevExpress.XtraBars.BarButtonItem()
 		Me.btnCustomer = New DevExpress.XtraBars.BarButtonItem()
 		Me.btnLogout = New DevExpress.XtraBars.BarButtonItem()
+		Me.btnInfo = New DevExpress.XtraBars.BarButtonItem()
+		Me.btnFolder = New DevExpress.XtraBars.BarButtonItem()
+		Me.btnSave = New DevExpress.XtraBars.BarButtonItem()
 		Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
 		Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
 		Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+		Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
 		Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
 		Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
 		CType(Me.RibbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,9 +45,9 @@ Partial Class frmMain
 		'RibbonControl
 		'
 		Me.RibbonControl.ExpandCollapseItem.Id = 0
-		Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.btnAddItem, Me.btnReport, Me.btnStocks, Me.btnGenerateBC, Me.btnCalculator, Me.btnAddUser, Me.btnCashier, Me.btnCustomer, Me.btnLogout})
+		Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.btnAddItem, Me.btnReport, Me.btnStocks, Me.btnGenerateBC, Me.btnCalculator, Me.btnAddUser, Me.btnCashier, Me.btnCustomer, Me.btnLogout, Me.btnInfo, Me.btnFolder, Me.btnSave})
 		Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
-		Me.RibbonControl.MaxItemId = 10
+		Me.RibbonControl.MaxItemId = 13
 		Me.RibbonControl.Name = "RibbonControl"
 		Me.RibbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1})
 		Me.RibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010
@@ -128,9 +132,37 @@ Partial Class frmMain
 		Me.btnLogout.LargeGlyph = Global.Z_POS_System.My.Resources.Resources.cancel_32x32
 		Me.btnLogout.Name = "btnLogout"
 		'
+		'btnInfo
+		'
+		Me.btnInfo.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+		Me.btnInfo.Caption = "System Info"
+		Me.btnInfo.Description = "System Info"
+		Me.btnInfo.Glyph = Global.Z_POS_System.My.Resources.Resources.pagesetup_16x16
+		Me.btnInfo.Id = 10
+		Me.btnInfo.LargeGlyph = Global.Z_POS_System.My.Resources.Resources.pagesetup_32x32
+		Me.btnInfo.Name = "btnInfo"
+		'
+		'btnFolder
+		'
+		Me.btnFolder.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+		Me.btnFolder.Caption = "Folder"
+		Me.btnFolder.Glyph = Global.Z_POS_System.My.Resources.Resources.loadpagesetup_16x16
+		Me.btnFolder.Id = 11
+		Me.btnFolder.LargeGlyph = Global.Z_POS_System.My.Resources.Resources.loadpagesetup_32x32
+		Me.btnFolder.Name = "btnFolder"
+		'
+		'btnSave
+		'
+		Me.btnSave.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+		Me.btnSave.Caption = "Save"
+		Me.btnSave.Glyph = Global.Z_POS_System.My.Resources.Resources.savepagesetup_16x16
+		Me.btnSave.Id = 12
+		Me.btnSave.LargeGlyph = Global.Z_POS_System.My.Resources.Resources.savepagesetup_32x32
+		Me.btnSave.Name = "btnSave"
+		'
 		'RibbonPage1
 		'
-		Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup2})
+		Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup2, Me.RibbonPageGroup3})
 		Me.RibbonPage1.Name = "RibbonPage1"
 		Me.RibbonPage1.Text = "RibbonPage1"
 		'
@@ -147,13 +179,24 @@ Partial Class frmMain
 		Me.RibbonPageGroup1.ItemLinks.Add(Me.btnCustomer)
 		Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
 		Me.RibbonPageGroup1.ShowCaptionButton = False
+		Me.RibbonPageGroup1.Text = "POINT OF SALE"
 		'
 		'RibbonPageGroup2
 		'
 		Me.RibbonPageGroup2.AllowTextClipping = False
-		Me.RibbonPageGroup2.ItemLinks.Add(Me.btnLogout)
+		Me.RibbonPageGroup2.ItemLinks.Add(Me.btnInfo)
+		Me.RibbonPageGroup2.ItemLinks.Add(Me.btnFolder)
+		Me.RibbonPageGroup2.ItemLinks.Add(Me.btnSave)
 		Me.RibbonPageGroup2.Name = "RibbonPageGroup2"
 		Me.RibbonPageGroup2.ShowCaptionButton = False
+		Me.RibbonPageGroup2.Text = "SYSTEM"
+		'
+		'RibbonPageGroup3
+		'
+		Me.RibbonPageGroup3.AllowTextClipping = False
+		Me.RibbonPageGroup3.ItemLinks.Add(Me.btnLogout)
+		Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
+		Me.RibbonPageGroup3.ShowCaptionButton = False
 		'
 		'RibbonStatusBar
 		'
@@ -200,6 +243,10 @@ Partial Class frmMain
 	Friend WithEvents btnLogout As DevExpress.XtraBars.BarButtonItem
 	Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
 	Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+	Friend WithEvents btnInfo As DevExpress.XtraBars.BarButtonItem
+	Friend WithEvents btnFolder As DevExpress.XtraBars.BarButtonItem
+	Friend WithEvents btnSave As DevExpress.XtraBars.BarButtonItem
+	Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
 
 
 End Class
